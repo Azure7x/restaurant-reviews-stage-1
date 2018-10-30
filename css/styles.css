@@ -60,7 +60,7 @@ nav h1 {
 }
 nav h1 a {
   color: #fff;
-  font-size: 14pt;
+  font-size: 16pt;
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -97,18 +97,31 @@ nav h1 a {
     color: #01447e;
     text-decoration: underline;
 }
+
+@media screen and (min-width: 600px) {
+	nav h1 a {
+	  font-size: 24pt;
+	}
+}
 /* ====================== Map ====================== */
 #map {
-  height: 400px;
+  height: 300px;
   width: 100%;
   background-color: #ccc;
+}
+
+@media screen and (min-width: 600px) {
+	#map {
+		height: 400px;
+	}
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
+  /* height: 50px; */
   background-color: #3397DB;
   align-items: center;
+	padding: 5px;
 }
 .filter-options h2 {
   color: white;
@@ -129,11 +142,20 @@ nav h1 a {
   width: 200px;
 }
 
+@media screen and (min-width: 600px) {
+	.filter-options h2 {
+		font-size: 18pt;
+	}
+
+	.filter-options select {
+		font-size: 12pt;
+	}
+}
+
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;
   list-style: outside none none;
-  margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
 }
@@ -141,18 +163,19 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 15px;
-  min-height: 380px;
+  margin: auto;
+	margin-top: 0px;
+	margin-bottom: 20px;
   padding: 0 30px 25px;
   text-align: left;
-  width: 270px;
+  width: 80%;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
+  min-height: 148px;
   min-width: 100%;
 }
 #restaurants-list li h1 {
@@ -180,6 +203,42 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+	#restaurants-list li {
+	  width: 38%;
+		/* min-height: 385px; */
+	}
+
+	#restaurants-list li h1 {
+		font-size: 16pt;
+	}
+
+	#restaurants-list li p {
+		font-size: 14pt;
+	}
+
+	ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	#restaurants-list li {
+	  width: 25%;
+		/* min-height: 385px; */
+	}
+
+	@media screen and (min-width: 1300px) {
+		ul {
+			width: 1300px;
+			margin: auto;
+		}
+	}
+
 }
 
 /* ====================== Restaurant Details ====================== */
