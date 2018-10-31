@@ -364,10 +364,9 @@ nav h1 a {
 			width: 900px;
 		}
 
-	@media screen and (min-width: 1200px) {
-		#restaurant-container, #reviews-container {
-			width: 1200px;
-		}
+	}
 
+	:focus {
+		border: 5px solid #41f462;
 	}
 }
