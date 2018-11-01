@@ -232,9 +232,9 @@ nav h1 a {
 		/* min-height: 385px; */
 	}
 
-	@media screen and (min-width: 1300px) {
+	@media screen and (min-width: 1200px) {
 		#restaurants-list ul {
-			width: 1300px;
+			width: 1200px;
 			margin: auto;
 		}
 	}
